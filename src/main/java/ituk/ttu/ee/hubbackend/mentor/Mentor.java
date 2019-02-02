@@ -8,7 +8,9 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-//@AllArgsConstructor
+@AllArgsConstructor
 @Builder
 public class Mentor {
+    //TODO: make sure that corresponds with db
+    private Long id;
 }

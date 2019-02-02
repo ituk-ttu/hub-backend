@@ -19,12 +19,12 @@ public class UserController {
     }
 
     @PutMapping("/update/")
-    public void updateUser(@RequestParam("user") User user) {
+    public void updateUser(@RequestBody User user) {
         //TODO update user info over API
     }
 
     @PostMapping("/add")
-    public void addUser(@RequestParam("user") User user) {
+    public void addUser(@RequestBody User user) {
         //TODO add new user to DB
     }
 
