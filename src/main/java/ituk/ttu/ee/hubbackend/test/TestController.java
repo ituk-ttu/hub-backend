@@ -1,4 +1,4 @@
-package ituk.ttu.ee.hubbackend.controllers;
+package ituk.ttu.ee.hubbackend.test;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
