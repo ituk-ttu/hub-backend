@@ -1,4 +1,4 @@
-package ituk.ttu.ee.hubbackend.permissionlog;
+package ituk.ttu.ee.hubbackend.resource;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,9 +12,12 @@ import java.time.LocalDateTime;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class DoorPermissionLogEntry {
+public class Resource {
     @NotNull private Long id;
-    @NotNull private Long modifiedby;
+    @NotNull private String name;
+    @NotNull private String comment;
+    @NotNull private String url;
+    @NotNull private LocalDateTime createdat;
     @NotNull private LocalDateTime updatedat;
-    @NotNull private String change;
+    @NotNull private Long authorid;
 }

@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotNull;
 import java.util.UUID;
 
 @AllArgsConstructor
@@ -12,6 +13,16 @@ import java.util.UUID;
 @Builder
 @Data
 public class Application {
-    //TODO: make sure that corresponds with db
-    private UUID uuid;
+    @NotNull private UUID uuid;
+    @NotNull private String firstname;
+    @NotNull private String lastname;
+    @NotNull private String personalcode;
+    @NotNull private String email;
+    @NotNull private String studentcode;
+    @NotNull private String curriculum;
+    @NotNull private String mentorselectioncode;
+    @NotNull private Long createdat;
+    @NotNull private Long updateat;
+    private Long processedbyid;
+    private Long mentorid;
 }

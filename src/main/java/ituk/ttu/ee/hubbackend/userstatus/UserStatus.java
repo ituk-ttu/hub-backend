@@ -1,4 +1,4 @@
-package ituk.ttu.ee.hubbackend.doorpermission;
+package ituk.ttu.ee.hubbackend.userstatus;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,8 +11,8 @@ import javax.validation.constraints.NotNull;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class DoorPermission {
-    @NotNull private Long id;
-    @NotNull private String doorcode;
-    @NotNull private Long userid;
+public class UserStatus {
+    @NotNull private Long statusid;
+    @NotNull private String statusname;
+    @NotNull private String description;
 }

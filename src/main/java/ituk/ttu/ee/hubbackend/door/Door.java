@@ -5,11 +5,12 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotNull;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 @Data
 public class Door {
-    //TODO: make sure that corresponds with db
-    private String code;
+    @NotNull private String code;
 }

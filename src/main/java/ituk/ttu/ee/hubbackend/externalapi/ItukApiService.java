@@ -45,9 +45,9 @@ public class ItukApiService {
 
     public Optional<User> getUserById(Long userId) {
         List<User> users = asList(
-                User.builder().id(1L).firstName("Groot").lastName("Tree").card("S6436475312761N").build(),
-                User.builder().id(2L).firstName("Rasmus").lastName("Rüngennenenenenen").card("S345126748N").build(),
-                User.builder().id(3L).firstName("Liine").lastName("Kasak").card("4316 6526 7275 0126").build()
+                // User.builder().id(1L).firstName("Groot").lastName("Tree").card("S6436475312761N").build(),
+                // User.builder().id(2L).firstName("Rasmus").lastName("Rüngennenenenenen").card("S345126748N").build(),
+                // User.builder().id(3L).firstName("Liine").lastName("Kasak").card("4316 6526 7275 0126").build()
         );
         return users.stream().filter(user -> user.getId().equals(userId)).findAny();
     }

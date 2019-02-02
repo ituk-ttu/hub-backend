@@ -22,5 +22,4 @@ public class ApplicationController {
     public void addApplication(@RequestBody Application application) {
         //TODO Send new Application over API to DB
     }
-
 }

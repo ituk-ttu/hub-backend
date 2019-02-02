@@ -1,4 +1,4 @@
-package ituk.ttu.ee.hubbackend.permissionlog;
+package ituk.ttu.ee.hubbackend.recoverykey;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,12 +9,13 @@ import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 
 @Data
-@Builder
-@AllArgsConstructor
 @NoArgsConstructor
-public class DoorPermissionLogEntry {
+@AllArgsConstructor
+@Builder
+public class RecoveryKey {
     @NotNull private Long id;
-    @NotNull private Long modifiedby;
+    @NotNull private String key;
+    @NotNull private LocalDateTime createdat;
     @NotNull private LocalDateTime updatedat;
-    @NotNull private String change;
+    @NotNull private Long userid;
 }
