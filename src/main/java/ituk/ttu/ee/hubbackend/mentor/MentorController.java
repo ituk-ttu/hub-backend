@@ -1,6 +1,5 @@
 package ituk.ttu.ee.hubbackend.mentor;
 
-import ituk.ttu.ee.hubbackend.model.Mentor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

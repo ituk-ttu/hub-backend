@@ -1,6 +1,5 @@
 package ituk.ttu.ee.hubbackend.application;
 
-import ituk.ttu.ee.hubbackend.model.Application;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

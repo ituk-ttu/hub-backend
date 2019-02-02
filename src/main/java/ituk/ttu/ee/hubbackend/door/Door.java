@@ -1,13 +1,14 @@
-package ituk.ttu.ee.hubbackend.model;
+package ituk.ttu.ee.hubbackend.door;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
-@Builder
+//@AllArgsConstructor
 @NoArgsConstructor
-@AllArgsConstructor
-public class User {
+@Builder
+@Data
+public class Door {
+
 }

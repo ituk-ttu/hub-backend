@@ -1,4 +1,4 @@
-package ituk.ttu.ee.hubbackend.model;
+package ituk.ttu.ee.hubbackend.mentor;
 
 
 import lombok.AllArgsConstructor;
@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
+//@AllArgsConstructor
 @Builder
 public class Mentor {
 }
