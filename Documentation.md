@@ -5,7 +5,7 @@ Classes are marked as
 ## VeryUsefulClass
 
 and methods are marked as
-#### veryUsefulMethod
+#### veryUsefulMethod()
 <br>
 <br>
 <br>
@@ -34,7 +34,7 @@ ApplicationController class is responsible for handling all the movement between
 @RequestMapping("/applications")
 public class ApplicationController {
 ```
-#### getAllApplications
+#### getAllApplications()
 Takes a GET request from /application/all and returns all applications from database. 
 ```
     @GetMapping("/all")
@@ -42,14 +42,14 @@ Takes a GET request from /application/all and returns all applications from data
         return null; // TODO ask API for all Applications
     }
 ```
-#### getApplicationById
+#### getApplicationById()
 Takes a GET request from /application/{id}, where {id} is the required applications id and returns it from database.
 ```
     @GetMapping("/{id}")
     public Application getApplicationById() {
         return null; // TODO ask application by ID from API
 ```
-#### addApplication
+#### addApplication()
 Takes a new application from /application/add and sends it over API to database
 ```
     @PostMapping("/add")
