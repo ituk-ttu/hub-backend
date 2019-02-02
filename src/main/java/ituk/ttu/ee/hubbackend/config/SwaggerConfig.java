@@ -15,7 +15,7 @@ import static springfox.documentation.builders.PathSelectors.regex;
 @EnableSwagger2
 public class SwaggerConfig extends WebMvcConfigurationSupport {
     @Bean
-    public Docket productApi() {
+    public Docket endpoint() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select().apis(RequestHandlerSelectors.basePackage("ituk.ttu.ee.hubbackend"))
                 .build();
