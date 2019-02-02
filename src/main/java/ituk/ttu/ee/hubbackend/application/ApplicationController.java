@@ -11,16 +11,16 @@ public class ApplicationController {
 
     @GetMapping("/all")
     public List<Application> getAllApplications() {
-        return null; //TODO ask API for all Applications
+        return null; // TODO ask API for all Applications
     }
 
     @GetMapping("/{id}")
     public Application getApplicationById() {
-        return null; //TODO ask application by ID from API
+        return null; // TODO ask application by ID from API
     }
 
-    @PostMapping("/add/{application}")
-    public void addApplication(@PathVariable("application") Application application) {
+    @PostMapping("/add")
+    public void addApplication(@RequestParam("application") Application application) {
         //TODO Send new Application over API to DB
     }
 

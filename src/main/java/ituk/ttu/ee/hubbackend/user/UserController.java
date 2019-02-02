@@ -10,23 +10,23 @@ import java.util.List;
 @RequestMapping("/users")
 public class UserController {
 
-    @GetMapping("/all")
+    @GetMapping("")
     public List<User> getAllUsers() {
         return null; //TODO return only needed variables
     }
 
-    @GetMapping("/user/{id}")
+    @GetMapping("/{id}")
     public User getById(@PathVariable("id") String id) {
         return null; //TODO return only one user
     }
 
-    @PutMapping("/update/{user}")
-    public void updateUser(@PathParam("user") User user) {
+    @PutMapping("/update/")
+    public void updateUser(@RequestParam("user") User user) {
         //TODO update user info over API
     }
 
-    @PostMapping("/add/{user}")
-    public void addUser(@PathParam("user") User user) {
+    @PostMapping("/add")
+    public void addUser(@RequestParam("user") User user) {
         //TODO add new user to DB
     }
 
