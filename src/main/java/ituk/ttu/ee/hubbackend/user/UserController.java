@@ -14,7 +14,7 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public User getById(@PathVariable("id") String id) {
+    public User getUsersById(@PathVariable("id") String id) {
         return null; //TODO return only one user
     }
 
