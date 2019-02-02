@@ -17,8 +17,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
     @Bean
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .select().apis(RequestHandlerSelectors.basePackage("ituk.ttu.ee.hubbackend.controllers"))
-                .paths(regex("/test.*"))
+                .select().apis(RequestHandlerSelectors.basePackage("ituk.ttu.ee.hubbackend"))
                 .build();
 
     }

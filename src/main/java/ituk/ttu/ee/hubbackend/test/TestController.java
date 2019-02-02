@@ -1,4 +1,4 @@
-package ituk.ttu.ee.hubbackend.controllers;
+package ituk.ttu.ee.hubbackend.test;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
