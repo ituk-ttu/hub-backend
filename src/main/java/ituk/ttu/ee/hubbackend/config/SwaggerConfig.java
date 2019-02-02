@@ -26,7 +26,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
                 .description("ITÜK hub backend endpoint listing")
                 .version("0.0.1-SNAPSHOT")
                 .license("Apache License Version 2.0")
-                .licenseUrl("https://www.apache.org/licenses/LICENSE-2.0\"")
+                .licenseUrl("https://www.apache.org/licenses/LICENSE-2.0")
                 //.contact(new Contact("John Thompson", "https://springframework.guru/about/", "john@springfrmework.guru"))
                 .build();
     }
