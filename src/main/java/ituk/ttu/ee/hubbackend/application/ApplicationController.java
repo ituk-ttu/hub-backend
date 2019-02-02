@@ -8,18 +8,18 @@ import java.util.List;
 @RequestMapping("/applications")
 public class ApplicationController {
 
-    @GetMapping("/all")
+    @GetMapping()
     public List<Application> getAllApplications() {
         return null; // TODO ask API for all Applications
     }
 
     @GetMapping("/{id}")
-    public Application getApplicationById() {
+    public Application getApplicationById(@PathVariable Long id) {
         return null; // TODO ask application by ID from API
     }
 
     @PostMapping("/add")
-    public void addApplication(@RequestParam("application") Application application) {
+    public void addApplication(@RequestBody Application application) {
         //TODO Send new Application over API to DB
     }
 
