@@ -14,12 +14,12 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Builder
 public class Mentor {
-    @NotNull private Long userid;
+    @NotNull private Long userId;
     @NotNull private String curriculum;
     @NotNull private String text;
     @NotNull private String gif;
     @NotNull private String quote;
-    @NotNull private Boolean enabled;
-    @NotNull private LocalDateTime createdat;
-    @NotNull private LocalDateTime updatedat;
+    @NotNull private boolean enabled;
+    @NotNull private LocalDateTime createdAt;
+    @NotNull private LocalDateTime updatedAt;
 }

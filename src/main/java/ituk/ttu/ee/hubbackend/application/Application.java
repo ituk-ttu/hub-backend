@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotNull;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @AllArgsConstructor
@@ -14,15 +15,15 @@ import java.util.UUID;
 @Data
 public class Application {
     @NotNull private UUID uuid;
-    @NotNull private String firstname;
-    @NotNull private String lastname;
-    @NotNull private String personalcode;
+    @NotNull private String firstName;
+    @NotNull private String lastName;
+    @NotNull private String personalCode;
     @NotNull private String email;
-    @NotNull private String studentcode;
+    @NotNull private String studentCode;
     @NotNull private String curriculum;
-    @NotNull private String mentorselectioncode;
-    @NotNull private Long createdat;
-    @NotNull private Long updateat;
-    private Long processedbyid;
-    private Long mentorid;
+    @NotNull private String mentorSelectionCode;
+    @NotNull private LocalDateTime createdAt;
+    @NotNull private LocalDateTime updateAt;
+    private Long processedById;
+    private Long mentorId;
 }

@@ -50,8 +50,8 @@ public class DoorPermissionLogEntryService {
         generateTextFor(sb, removed);
         return DoorPermissionLogEntry.builder()
                 .modifiedBy(user)
-                .modifiedAt(LocalDateTime.now())
-                .entry(sb.toString())
+                .updatedAt(LocalDateTime.now())
+                .change(sb.toString())
                 .build();
     }
 
@@ -60,7 +60,7 @@ public class DoorPermissionLogEntryService {
             Optional<User> user = itukApiService.getUserById(userId);
             if (!user.isPresent()) return;
             sb.append(NAME_LABEL).append(user.get().getFullName()).append(LINE_SEPARATOR);
-            sb.append(CARD_LABEL).append(user.get().getCard()).append(LINE_SEPARATOR);
+            sb.append(CARD_LABEL).append(user.get().getCardNumber()).append(LINE_SEPARATOR);
             List<String> doors = changes.get(userId).stream().map(Door::getCode).collect(Collectors.toList());
             sb.append(DOORS_LABEL).append(StringUtils.join(doors, DOOR_SEPARATOR));
         });
